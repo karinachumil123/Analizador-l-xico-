@@ -1,0 +1,23 @@
+// Definición de colores
+color $rojo --> #FF00F0;
+color $azul --> #FFA0A0;
+
+// Definición de número de pasos
+número $pasos --> 2;
+
+// Bucle principal
+repetir(3) {
+    pintar($rojo);
+    izquierda();
+    repetir($pasos) {
+        pintar($azul);
+        derecha();
+        repetir($pasos) {
+            pintar(#AAAAAA);
+        }
+    }
+    atrás();
+}
+
+// Acción final
+adelante();
